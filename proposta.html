@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Vinícius | Solicitar Proposta</title>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      name="theme-color"
+      media="(prefers-color-scheme: light)"
+      content="#090a1a"
+    />
+    <meta
+      name="theme-color"
+      media="(prefers-color-scheme: dark)"
+      content="#090a1a"
+    />
+
+    <!-- Favicon -->
+    <link
+      rel="shortcut icon"
+      href="assets/images/favicon.ico"
+      type="image/x-icon"
+    />
+
+    <!-- Box Icons -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="assets/styles/proposta.css" />
+  </head>
+  <body>
+    <span class="blur"></span>
+    <span class="blur"></span>
+    <!-- Formulário de Proposta -->
+    <section class="form-proposta container">
+      <h1>V <span>.</span></h1>
+      <h2>Solicite uma Proposta</h2>
+      <form action="" class="contact-form" id="contact-form">
+        <label for="nome">Nome *</label>
+        <input
+          type="text"
+          placeholder="Qual seu nome?"
+          class="nome"
+          id="none"
+          required
+        />
+
+        <label for="empresa">Nome da Empresa *</label>
+        <input
+          type="text"
+          placeholder="Nome da sua empresa ou projeto"
+          class="empresa"
+          id="empresa"
+          required
+        />
+
+        <label for="email">Email *</label>
+        <input
+          type="email"
+          placeholder="E-mail para contato"
+          class="email"
+          id="email"
+          required
+        />
+
+        <label for="telefone">Telefone *</label>
+        <input
+          type="tel"
+          placeholder="Telefone para contato"
+          class="telefone"
+          id="telefone"
+          required
+        />
+
+        <label for="site">Site Atual</label>
+        <input
+          type="text"
+          placeholder="Site atual (se houver)"
+          class="site"
+          id="site"
+        />
+
+        <label for="projeto">Tipo de Projeto *</label>
+        <input
+          type="text"
+          placeholder="Qual o tipo de projeto site/app"
+          class="projeto"
+          id="projeto"
+          required
+        />
+
+        <label for="orcamento">Orçamento *</label>
+        <input
+          type="text"
+          class="orcamento"
+          placeholder="Digite seu orçamento disponível para o projeto"
+          id="orcamento"
+          required
+        />
+
+        <label for="prazo">Para quando você precisa ? *</label>
+        <input
+          type="text"
+          placeholder="Dentro de quantos dias você precisa do projeto?"
+          id="prazo"
+          class="prazo"
+          required
+        />
+
+        <label for="sobre">Sobre seu Negócio *</label>
+        <textarea
+          id="sobre"
+          cols="30"
+          rows="05"
+          placeholder="Me conte um pouco sobre sua empresa/negócio"
+          class="sobre"
+          required
+        ></textarea>
+
+        <label for="referencia">Referências Visuais</label>
+        <textarea
+          id="referencia"
+          cols="30"
+          rows="05"
+          placeholder="Aqui você pode adicionar links de projetos que podemos usar como referências"
+          class="referencia"
+          required
+        ></textarea>
+        <input type="submit" value="Enviar" class="send-btn" />
+      </form>
+      <div class="back">
+        <a href="index.html">
+          <i class="bx bx-left-arrow-alt"></i>Voltar para o início
+        </a>
+      </div>
+    </section>
+    
+    <!-- Email JS -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <!-- Sweet Alert -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("YgR-T2izg5tlhuYhD");
+      })();
+    </script>
+
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,184 @@
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+/* Tema de Cores (variáveis) */
+
+:root {
+  --main-color: #647bff;
+  --body-color: #090a1a;
+  --container-color: #171b3c;
+  --heading-color: #222231;
+  --box-color: #0d0f26;
+  --bg-color: #fff;
+  --hover-color: #546eff;
+}
+
+/* Definições Gerais */
+
+* {
+  font-family: "Poppins", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  scroll-padding-top: 2rem;
+}
+
+body {
+  color: var(--bg-color);
+  background: var(--body-color);
+}
+
+html::-webkit-scrollbar {
+  width: 0.5rem;
+  background: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: var(--heading-color);
+}
+
+img {
+  width: 100%;
+}
+
+section {
+  padding: 3rem 0 2rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  max-width: 960px;
+  margin: auto;
+  width: 100%;
+}
+
+
+/* Efeito de blur */
+.blur {
+  position: absolute;
+  top: 0;
+  right: 0;
+  box-shadow: 0 0 1000px 50px var(--main-color);
+  z-index: -100;
+}
+
+/* Estilo do formulário */
+
+.form-proposta h1 {
+  font-family: 'Abril Fatface', cursive;
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  color: transparent;
+  -webkit-text-stroke: 1px var(--main-color);
+}
+
+.form-proposta span {
+  color: var(--bg-color);
+  -webkit-text-stroke: 0px;
+}
+
+.form-proposta h2 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: auto;
+  width: 100%;
+  display: grid;
+  row-gap: 1rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  border: 1px solid transparent;
+  outline: none;
+  font: 1rem;
+  padding: 1rem;
+  color: var(--bg-color);
+  background-color: var(--box-color);
+  border-radius: 0.2rem;
+}
+
+.contact-form input:hover,
+.contact-form textarea:hover,
+.contact-form input:focus
+.contact-form textarea:focus {
+  transition: 0.3s all linear;
+  border: 1px solid var(--hover-color);
+}
+
+.contact-form p {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.contact-form .send-btn {
+  width: 100%;
+  align-items: center;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  padding: 1rem;
+  background-color: var(--main-color);
+  cursor: pointer;
+  margin-bottom: 2rem;
+}
+
+.contact-form .send-btn:hover {
+  background-color: var(--hover-color);
+  transition: 0.3s all linear;
+}
+
+.back {
+  display: block;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.back a {
+  display: inline-flex;
+  align-items: center;
+  column-gap: 0.5rem;
+  font-size: 1rem;
+  color: var(--bg-color);
+}
+
+.back a:hover {
+  transition: 0.3 all linear;
+  color: var(--hover-color);
+}
+
+.back .bx {
+  font-size: 1.2rem;
+}
+
+
+
+/* Responsividade */
+
+@media (max-width:990px) {
+  .container {
+    margin: 0 auto;
+    width: 90%;
+  }
+}
+
+@media (max-width: 892px) {
+  section {
+    padding: 2rem 0;
+  }
+}
