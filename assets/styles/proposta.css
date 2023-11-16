@@ -134,6 +134,7 @@ li {
   padding: 1rem;
   background-color: var(--main-color);
   cursor: pointer;
+  font-weight: 600;
   margin-bottom: 2rem;
 }
 
