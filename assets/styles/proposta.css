@@ -106,7 +106,7 @@ li {
 .contact-form textarea {
   border: 1px solid transparent;
   outline: none;
-  font: 1rem;
+  font-size: 1rem;
   padding: 1rem;
   color: var(--bg-color);
   background-color: var(--box-color);
