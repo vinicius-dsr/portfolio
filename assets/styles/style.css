@@ -1,6 +1,6 @@
 /* Google Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
 
 /* Tema de Cores (variáveis) */
 
@@ -71,7 +71,7 @@ header {
   z-index: 100;
   background-color: rgba(100%, 100%, 100% / 0.7);
   backdrop-filter: blur(30px);
-  border-bottom: 1px solid rgba(100, 123, 255, .1);
+  border-bottom: 1px solid rgba(100, 123, 255, 0.1);
 }
 
 .nav {
@@ -82,7 +82,7 @@ header {
 }
 
 .logo {
-  font-family: 'Abril Fatface', cursive;
+  font-family: "Abril Fatface", cursive;
   font-size: 1.7rem;
   font-weight: 700;
   color: transparent;
@@ -184,7 +184,7 @@ header {
   margin-bottom: 2rem;
 }
 
-.home-img{
+.home-img {
   width: 100px;
   height: 100px;
   object-fit: cover;
@@ -393,10 +393,10 @@ header {
   position: relative;
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 1.3rem;
   align-items: center;
   width: 100%;
-  height: 320px;
+  /* height: 320px; */
   /* border-radius: 1rem; */
   border-radius: 0.2rem;
   overflow: hidden;
@@ -406,14 +406,16 @@ header {
 .portfolio-box span {
   display: flex;
   align-items: center;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   font-weight: 600;
   text-align: center;
   color: var(--main-color);
 }
 
 .portfolio-box p {
- text-align: center;
+  text-align: center;
+  font-size: 1rem;
+  padding-bottom: 1rem;
 }
 
 .portfolio-img {
@@ -443,6 +445,12 @@ header {
   font-weight: 500;
   text-transform: uppercase;
   margin-bottom: 10px;
+}
+
+.portfolio-overlay .overlay-links {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
 }
 
 .portfolio-overlay .bx {
@@ -523,18 +531,17 @@ header {
   margin-bottom: 1rem;
 }
 
-.proposta-img{
+.proposta-img {
   width: 100px;
   height: 100px;
   object-fit: cover;
   object-position: center;
 }
 
-
 /* Footer */
 
 .footer {
-  border-top: 1px solid rgba(100, 123, 255, .1);
+  border-top: 1px solid rgba(100, 123, 255, 0.1);
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -556,7 +563,7 @@ header {
   column-gap: 1rem;
 }
 
-.footer-links a{
+.footer-links a {
   font-size: 1rem;
   font-weight: 400;
   color: var(--bg-color);
@@ -595,7 +602,7 @@ header {
 
 /* Responsive */
 
-@media (max-width:990px) {
+@media (max-width: 990px) {
   .container {
     margin: 0 auto;
     width: 90%;
@@ -634,10 +641,10 @@ header {
     line-height: 3.8rem;
   }
   .home-text p {
-    font-size: 0.950rem;
+    font-size: 0.95rem;
   }
   .services-content {
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
   .portfolio-content {
     grid-template-columns: repeat(2, 1fr);
@@ -690,12 +697,12 @@ header {
     margin: 0.8rem 0;
   }
   .about-text p {
-    font-size: 0.920rem;
+    font-size: 0.92rem;
     margin-bottom: 1.3rem;
   }
 }
 
-@media (max-width:450px) {
+@media (max-width: 450px) {
   .home {
     min-height: 480px;
     padding-top: 5rem;
