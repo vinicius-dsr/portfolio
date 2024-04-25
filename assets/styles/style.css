@@ -402,6 +402,7 @@ header {
   border-radius: 0.2rem;
   overflow: hidden;
   border: 1px solid #171b3c;
+  border-radius: 0.2rem;
   padding: 2rem;
 }
 .portfolio-box span {
